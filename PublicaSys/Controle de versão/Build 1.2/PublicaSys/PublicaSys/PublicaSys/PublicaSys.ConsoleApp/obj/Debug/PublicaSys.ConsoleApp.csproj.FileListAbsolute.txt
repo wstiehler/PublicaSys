@@ -1,0 +1,5 @@
+C:\Users\William\Desktop\PublicaSys\PublicaSys\PublicaSys\PublicaSys.ConsoleApp\bin\Debug\PublicaSys.ConsoleApp.dll
+C:\Users\William\Desktop\PublicaSys\PublicaSys\PublicaSys\PublicaSys.ConsoleApp\bin\Debug\PublicaSys.ConsoleApp.pdb
+C:\Users\William\Desktop\PublicaSys\PublicaSys\PublicaSys\PublicaSys.ConsoleApp\obj\Debug\PublicaSys.ConsoleApp.csprojAssemblyReference.cache
+C:\Users\William\Desktop\PublicaSys\PublicaSys\PublicaSys\PublicaSys.ConsoleApp\obj\Debug\PublicaSys.ConsoleApp.dll
+C:\Users\William\Desktop\PublicaSys\PublicaSys\PublicaSys\PublicaSys.ConsoleApp\obj\Debug\PublicaSys.ConsoleApp.pdb

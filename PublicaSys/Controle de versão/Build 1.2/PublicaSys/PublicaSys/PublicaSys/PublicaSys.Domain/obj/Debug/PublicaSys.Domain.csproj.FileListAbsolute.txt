@@ -1,0 +1,5 @@
+C:\Users\William\Desktop\PublicaSys\PublicaSys\PublicaSys\PublicaSys.Domain\bin\Debug\PublicaSys.Domain.dll
+C:\Users\William\Desktop\PublicaSys\PublicaSys\PublicaSys\PublicaSys.Domain\bin\Debug\PublicaSys.Domain.pdb
+C:\Users\William\Desktop\PublicaSys\PublicaSys\PublicaSys\PublicaSys.Domain\obj\Debug\PublicaSys.Domain.csprojAssemblyReference.cache
+C:\Users\William\Desktop\PublicaSys\PublicaSys\PublicaSys\PublicaSys.Domain\obj\Debug\PublicaSys.Domain.dll
+C:\Users\William\Desktop\PublicaSys\PublicaSys\PublicaSys\PublicaSys.Domain\obj\Debug\PublicaSys.Domain.pdb

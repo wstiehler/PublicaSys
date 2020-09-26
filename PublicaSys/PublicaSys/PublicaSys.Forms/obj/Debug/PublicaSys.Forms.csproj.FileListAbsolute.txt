@@ -1,0 +1,14 @@
+C:\Users\William\Desktop\PublicaSys\PublicaSys\PublicaSys\PublicaSys.Forms\bin\Debug\PublicaSys.Forms.exe.config
+C:\Users\William\Desktop\PublicaSys\PublicaSys\PublicaSys\PublicaSys.Forms\bin\Debug\PublicaSys.Forms.exe
+C:\Users\William\Desktop\PublicaSys\PublicaSys\PublicaSys\PublicaSys.Forms\bin\Debug\PublicaSys.Forms.pdb
+C:\Users\William\Desktop\PublicaSys\PublicaSys\PublicaSys\PublicaSys.Forms\obj\Debug\PublicaSys.Forms.csprojAssemblyReference.cache
+C:\Users\William\Desktop\PublicaSys\PublicaSys\PublicaSys\PublicaSys.Forms\obj\Debug\PublicaSys.Forms.Properties.Resources.resources
+C:\Users\William\Desktop\PublicaSys\PublicaSys\PublicaSys\PublicaSys.Forms\obj\Debug\PublicaSys.Forms.csproj.GenerateResource.cache
+C:\Users\William\Desktop\PublicaSys\PublicaSys\PublicaSys\PublicaSys.Forms\obj\Debug\PublicaSys.Forms.exe
+C:\Users\William\Desktop\PublicaSys\PublicaSys\PublicaSys\PublicaSys.Forms\obj\Debug\PublicaSys.Forms.pdb
+C:\Users\William\Desktop\PublicaSys\PublicaSys\PublicaSys\PublicaSys.Forms\obj\Debug\PublicaSys.Forms.FormConsulta.resources
+C:\Users\William\Desktop\PublicaSys\PublicaSys\PublicaSys\PublicaSys.Forms\obj\Debug\PublicaSys.Forms.FormInicio.resources
+C:\Users\William\Desktop\PublicaSys\PublicaSys\PublicaSys\PublicaSys.Forms\obj\Debug\PublicaSys.Forms.FormInsercao.resources
+C:\Users\William\Desktop\PublicaSys\PublicaSys\PublicaSys\PublicaSys.Forms\obj\Debug\PublicaSys.Forms.FormTabelaJogos.resources
+C:\Users\William\Desktop\PublicaSys\PublicaSys\PublicaSys\PublicaSys.Forms\obj\Debug\PublicaSys.Forms.FormCalculoMin.resources
+C:\Users\William\Desktop\PublicaSys\PublicaSys\PublicaSys\PublicaSys.Forms\obj\Debug\PublicaSys.Forms.FormCalculoMax.resources
