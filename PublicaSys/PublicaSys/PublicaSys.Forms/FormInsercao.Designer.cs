@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormInsercao));
             this.btnVoltarPagina = new System.Windows.Forms.Button();
+            this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
             this.SuspendLayout();
             // 
             // btnVoltarPagina
@@ -42,6 +43,12 @@
             this.btnVoltarPagina.Text = "Voltar à página inicial";
             this.btnVoltarPagina.UseVisualStyleBackColor = true;
             this.btnVoltarPagina.Click += new System.EventHandler(this.btnVoltarPagina_Click);
+            // 
+            // directorySearcher1
+            // 
+            this.directorySearcher1.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
+            this.directorySearcher1.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
+            this.directorySearcher1.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
             // 
             // FormInsercao
             // 
@@ -65,5 +72,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnVoltarPagina;
+        private System.DirectoryServices.DirectorySearcher directorySearcher1;
     }
 }
