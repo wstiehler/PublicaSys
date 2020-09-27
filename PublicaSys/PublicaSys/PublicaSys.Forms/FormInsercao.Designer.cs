@@ -75,6 +75,7 @@
             // jogoLabel
             // 
             jogoLabel.AutoSize = true;
+            jogoLabel.BackColor = System.Drawing.Color.White;
             jogoLabel.Location = new System.Drawing.Point(12, 49);
             jogoLabel.Name = "jogoLabel";
             jogoLabel.Size = new System.Drawing.Size(33, 13);
@@ -84,6 +85,7 @@
             // placarLabel
             // 
             placarLabel.AutoSize = true;
+            placarLabel.BackColor = System.Drawing.Color.White;
             placarLabel.Location = new System.Drawing.Point(12, 75);
             placarLabel.Name = "placarLabel";
             placarLabel.Size = new System.Drawing.Size(40, 13);
@@ -93,6 +95,7 @@
             // mínimo_da_temporadaLabel
             // 
             mínimo_da_temporadaLabel.AutoSize = true;
+            mínimo_da_temporadaLabel.BackColor = System.Drawing.Color.White;
             mínimo_da_temporadaLabel.Location = new System.Drawing.Point(12, 101);
             mínimo_da_temporadaLabel.Name = "mínimo_da_temporadaLabel";
             mínimo_da_temporadaLabel.Size = new System.Drawing.Size(113, 13);
@@ -102,6 +105,7 @@
             // máximo_da_temporaLabel
             // 
             máximo_da_temporaLabel.AutoSize = true;
+            máximo_da_temporaLabel.BackColor = System.Drawing.Color.White;
             máximo_da_temporaLabel.Location = new System.Drawing.Point(12, 127);
             máximo_da_temporaLabel.Name = "máximo_da_temporaLabel";
             máximo_da_temporaLabel.Size = new System.Drawing.Size(102, 13);
@@ -111,6 +115,7 @@
             // quebra_recorde_MinLabel
             // 
             quebra_recorde_MinLabel.AutoSize = true;
+            quebra_recorde_MinLabel.BackColor = System.Drawing.Color.White;
             quebra_recorde_MinLabel.Location = new System.Drawing.Point(12, 153);
             quebra_recorde_MinLabel.Name = "quebra_recorde_MinLabel";
             quebra_recorde_MinLabel.Size = new System.Drawing.Size(104, 13);
@@ -120,6 +125,7 @@
             // quebra_recorde_MáxLabel
             // 
             quebra_recorde_MáxLabel.AutoSize = true;
+            quebra_recorde_MáxLabel.BackColor = System.Drawing.Color.White;
             quebra_recorde_MáxLabel.Location = new System.Drawing.Point(12, 179);
             quebra_recorde_MáxLabel.Name = "quebra_recorde_MáxLabel";
             quebra_recorde_MáxLabel.Size = new System.Drawing.Size(107, 13);
@@ -330,6 +336,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.CancelButton = this.btnVoltarPagina;
             this.ClientSize = new System.Drawing.Size(727, 376);

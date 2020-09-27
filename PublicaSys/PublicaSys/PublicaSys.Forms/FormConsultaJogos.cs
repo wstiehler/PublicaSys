@@ -1,0 +1,40 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace PublicaSys.Forms
+{
+    public partial class FormConsultaJogos : Form
+    {
+        public FormConsultaJogos()
+        {
+            InitializeComponent();
+        }
+
+        private void tableBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.tableBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.publicaSysDatabaseDataSet1);
+
+        }
+
+        private void FormConsultaJogos_Load(object sender, EventArgs e)
+        {
+            // TODO: esta linha de código carrega dados na tabela 'publicaSysDatabaseDataSet2.Table'. Você pode movê-la ou removê-la conforme necessário.
+            this.tableTableAdapter1.Fill(this.publicaSysDatabaseDataSet2.Table);
+
+        }
+
+        private void btnVoltarPageConsulta_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+    }
+}

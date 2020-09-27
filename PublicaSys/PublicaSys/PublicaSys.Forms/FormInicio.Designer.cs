@@ -36,12 +36,18 @@
             this.inserirDadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabelasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabelaDeJogosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.informaçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.buildToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calculosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calculosDaTemporadaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calcularMinimoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calcularMaximoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.informaçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.buildToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarJogosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarPlacaresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarMínimoTemporadaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarMáximoTemporadaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarQuebraRecordeMínimoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarQuebraRecordeMáximoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,10 +88,16 @@
             // 
             // consultarDadosToolStripMenuItem
             // 
+            this.consultarDadosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.consultarJogosToolStripMenuItem,
+            this.consultarPlacaresToolStripMenuItem,
+            this.consultarMínimoTemporadaToolStripMenuItem,
+            this.consultarMáximoTemporadaToolStripMenuItem,
+            this.consultarQuebraRecordeMínimoToolStripMenuItem,
+            this.consultarQuebraRecordeMáximoToolStripMenuItem});
             this.consultarDadosToolStripMenuItem.Name = "consultarDadosToolStripMenuItem";
             this.consultarDadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.consultarDadosToolStripMenuItem.Text = "Consultar Jogos";
-            this.consultarDadosToolStripMenuItem.Click += new System.EventHandler(this.consultarDadosToolStripMenuItem_Click);
+            this.consultarDadosToolStripMenuItem.Text = "Consultas";
             // 
             // inserirDadosToolStripMenuItem
             // 
@@ -105,23 +117,9 @@
             // tabelaDeJogosToolStripMenuItem
             // 
             this.tabelaDeJogosToolStripMenuItem.Name = "tabelaDeJogosToolStripMenuItem";
-            this.tabelaDeJogosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tabelaDeJogosToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.tabelaDeJogosToolStripMenuItem.Text = "Tabela de Jogos";
             this.tabelaDeJogosToolStripMenuItem.Click += new System.EventHandler(this.tabelaDeJogosToolStripMenuItem_Click);
-            // 
-            // informaçõesToolStripMenuItem
-            // 
-            this.informaçõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.buildToolStripMenuItem});
-            this.informaçõesToolStripMenuItem.Name = "informaçõesToolStripMenuItem";
-            this.informaçõesToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
-            this.informaçõesToolStripMenuItem.Text = "Informações";
-            // 
-            // buildToolStripMenuItem
-            // 
-            this.buildToolStripMenuItem.Name = "buildToolStripMenuItem";
-            this.buildToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.buildToolStripMenuItem.Text = "Build";
             // 
             // calculosToolStripMenuItem
             // 
@@ -143,16 +141,67 @@
             // calcularMinimoToolStripMenuItem
             // 
             this.calcularMinimoToolStripMenuItem.Name = "calcularMinimoToolStripMenuItem";
-            this.calcularMinimoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.calcularMinimoToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.calcularMinimoToolStripMenuItem.Text = "Calcular Minimo";
             this.calcularMinimoToolStripMenuItem.Click += new System.EventHandler(this.calcularMinimoToolStripMenuItem_Click);
             // 
             // calcularMaximoToolStripMenuItem
             // 
             this.calcularMaximoToolStripMenuItem.Name = "calcularMaximoToolStripMenuItem";
-            this.calcularMaximoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.calcularMaximoToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.calcularMaximoToolStripMenuItem.Text = "Calcular Maximo";
             this.calcularMaximoToolStripMenuItem.Click += new System.EventHandler(this.calcularMaximoToolStripMenuItem_Click);
+            // 
+            // informaçõesToolStripMenuItem
+            // 
+            this.informaçõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.buildToolStripMenuItem});
+            this.informaçõesToolStripMenuItem.Name = "informaçõesToolStripMenuItem";
+            this.informaçõesToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
+            this.informaçõesToolStripMenuItem.Text = "Informações";
+            // 
+            // buildToolStripMenuItem
+            // 
+            this.buildToolStripMenuItem.Name = "buildToolStripMenuItem";
+            this.buildToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
+            this.buildToolStripMenuItem.Text = "Build";
+            // 
+            // consultarJogosToolStripMenuItem
+            // 
+            this.consultarJogosToolStripMenuItem.Name = "consultarJogosToolStripMenuItem";
+            this.consultarJogosToolStripMenuItem.Size = new System.Drawing.Size(260, 22);
+            this.consultarJogosToolStripMenuItem.Text = "Consultar Jogos";
+            this.consultarJogosToolStripMenuItem.Click += new System.EventHandler(this.consultarJogosToolStripMenuItem_Click);
+            // 
+            // consultarPlacaresToolStripMenuItem
+            // 
+            this.consultarPlacaresToolStripMenuItem.Name = "consultarPlacaresToolStripMenuItem";
+            this.consultarPlacaresToolStripMenuItem.Size = new System.Drawing.Size(260, 22);
+            this.consultarPlacaresToolStripMenuItem.Text = "Consultar Placares";
+            // 
+            // consultarMínimoTemporadaToolStripMenuItem
+            // 
+            this.consultarMínimoTemporadaToolStripMenuItem.Name = "consultarMínimoTemporadaToolStripMenuItem";
+            this.consultarMínimoTemporadaToolStripMenuItem.Size = new System.Drawing.Size(260, 22);
+            this.consultarMínimoTemporadaToolStripMenuItem.Text = "Consultar Mínimo Temporada";
+            // 
+            // consultarMáximoTemporadaToolStripMenuItem
+            // 
+            this.consultarMáximoTemporadaToolStripMenuItem.Name = "consultarMáximoTemporadaToolStripMenuItem";
+            this.consultarMáximoTemporadaToolStripMenuItem.Size = new System.Drawing.Size(260, 22);
+            this.consultarMáximoTemporadaToolStripMenuItem.Text = "Consultar Máximo Temporada";
+            // 
+            // consultarQuebraRecordeMínimoToolStripMenuItem
+            // 
+            this.consultarQuebraRecordeMínimoToolStripMenuItem.Name = "consultarQuebraRecordeMínimoToolStripMenuItem";
+            this.consultarQuebraRecordeMínimoToolStripMenuItem.Size = new System.Drawing.Size(260, 22);
+            this.consultarQuebraRecordeMínimoToolStripMenuItem.Text = "Consultar Quebra Recorde Mínimo";
+            // 
+            // consultarQuebraRecordeMáximoToolStripMenuItem
+            // 
+            this.consultarQuebraRecordeMáximoToolStripMenuItem.Name = "consultarQuebraRecordeMáximoToolStripMenuItem";
+            this.consultarQuebraRecordeMáximoToolStripMenuItem.Size = new System.Drawing.Size(260, 22);
+            this.consultarQuebraRecordeMáximoToolStripMenuItem.Text = "Consultar Quebra Recorde Máximo";
             // 
             // FormInicio
             // 
@@ -171,6 +220,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormInicio";
             this.Text = "Pública Tecnologia ";
+            this.Load += new System.EventHandler(this.FormInicio_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -193,6 +243,12 @@
         private System.Windows.Forms.ToolStripMenuItem calculosDaTemporadaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem calcularMinimoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem calcularMaximoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultarJogosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultarPlacaresToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultarMínimoTemporadaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultarMáximoTemporadaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultarQuebraRecordeMínimoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultarQuebraRecordeMáximoToolStripMenuItem;
     }
 }
 

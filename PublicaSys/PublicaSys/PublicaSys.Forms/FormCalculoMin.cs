@@ -21,5 +21,10 @@ namespace PublicaSys.Forms
         {
             this.Close();
         }
+
+        private void FormCalculoMin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -32,22 +32,22 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTabelaJogos));
             this.btnVoltarPagina = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.publicaSysDatabaseDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.publicaSysDatabaseDataSet = new PublicaSys.Forms.PublicaSysDatabaseDataSet();
-            this.publicaSysDatabaseDataSet1 = new PublicaSys.Forms.PublicaSysDatabaseDataSet1();
-            this.tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tableTableAdapter = new PublicaSys.Forms.PublicaSysDatabaseDataSet1TableAdapters.TableTableAdapter();
             this.jogoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.placarDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mínimoDaTemporadaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.máximoDaTemporaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quebraRecordeMinDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quebraRecordeMáxDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.publicaSysDatabaseDataSet1 = new PublicaSys.Forms.PublicaSysDatabaseDataSet1();
+            this.publicaSysDatabaseDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.publicaSysDatabaseDataSet = new PublicaSys.Forms.PublicaSysDatabaseDataSet();
+            this.tableTableAdapter = new PublicaSys.Forms.PublicaSysDatabaseDataSet1TableAdapters.TableTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.publicaSysDatabaseDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.publicaSysDatabaseDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.publicaSysDatabaseDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.publicaSysDatabaseDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btnVoltarPagina
@@ -76,32 +76,8 @@
             this.dataGridView1.DataSource = this.tableBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(64, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(643, 315);
+            this.dataGridView1.Size = new System.Drawing.Size(643, 266);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // publicaSysDatabaseDataSetBindingSource
-            // 
-            this.publicaSysDatabaseDataSetBindingSource.DataSource = this.publicaSysDatabaseDataSet;
-            this.publicaSysDatabaseDataSetBindingSource.Position = 0;
-            // 
-            // publicaSysDatabaseDataSet
-            // 
-            this.publicaSysDatabaseDataSet.DataSetName = "PublicaSysDatabaseDataSet";
-            this.publicaSysDatabaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // publicaSysDatabaseDataSet1
-            // 
-            this.publicaSysDatabaseDataSet1.DataSetName = "PublicaSysDatabaseDataSet1";
-            this.publicaSysDatabaseDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tableBindingSource
-            // 
-            this.tableBindingSource.DataMember = "Table";
-            this.tableBindingSource.DataSource = this.publicaSysDatabaseDataSet1;
-            // 
-            // tableTableAdapter
-            // 
-            this.tableTableAdapter.ClearBeforeFill = true;
             // 
             // jogoDataGridViewTextBoxColumn
             // 
@@ -139,13 +115,40 @@
             this.quebraRecordeMáxDataGridViewTextBoxColumn.HeaderText = "Quebra recorde Máx";
             this.quebraRecordeMáxDataGridViewTextBoxColumn.Name = "quebraRecordeMáxDataGridViewTextBoxColumn";
             // 
+            // tableBindingSource
+            // 
+            this.tableBindingSource.DataMember = "Table";
+            this.tableBindingSource.DataSource = this.publicaSysDatabaseDataSet1;
+            // 
+            // publicaSysDatabaseDataSet1
+            // 
+            this.publicaSysDatabaseDataSet1.DataSetName = "PublicaSysDatabaseDataSet1";
+            this.publicaSysDatabaseDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // publicaSysDatabaseDataSetBindingSource
+            // 
+            this.publicaSysDatabaseDataSetBindingSource.DataSource = this.publicaSysDatabaseDataSet;
+            this.publicaSysDatabaseDataSetBindingSource.Position = 0;
+            // 
+            // publicaSysDatabaseDataSet
+            // 
+            this.publicaSysDatabaseDataSet.DataSetName = "PublicaSysDatabaseDataSet";
+            this.publicaSysDatabaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tableTableAdapter
+            // 
+            this.tableTableAdapter.ClearBeforeFill = true;
+            // 
             // FormTabelaJogos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(719, 354);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnVoltarPagina);
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormTabelaJogos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
@@ -153,10 +156,10 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormTabelaJogos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.publicaSysDatabaseDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.publicaSysDatabaseDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.publicaSysDatabaseDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.publicaSysDatabaseDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -60,6 +60,12 @@
     <Compile Include="FormCalculoMin.Designer.cs">
       <DependentUpon>FormCalculoMin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormConsultaJogos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultaJogos.Designer.cs">
+      <DependentUpon>FormConsultaJogos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormInicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,12 +77,6 @@
     </Compile>
     <Compile Include="FormInsercao.Designer.cs">
       <DependentUpon>FormInsercao.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormConsulta.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormConsulta.Designer.cs">
-      <DependentUpon>FormConsulta.cs</DependentUpon>
     </Compile>
     <Compile Include="FormTabelaJogos.cs">
       <SubType>Form</SubType>
@@ -96,14 +96,19 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PublicaSysDatabaseDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="PublicaSysDatabaseDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PublicaSysDatabaseDataSet2.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormCalculoMax.resx">
       <DependentUpon>FormCalculoMax.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCalculoMin.resx">
       <DependentUpon>FormCalculoMin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormConsulta.resx">
-      <DependentUpon>FormConsulta.cs</DependentUpon>
+    <EmbeddedResource Include="FormConsultaJogos.resx">
+      <DependentUpon>FormConsultaJogos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormInicio.resx">
       <DependentUpon>FormInicio.cs</DependentUpon>
@@ -153,6 +158,17 @@
     </None>
     <None Include="PublicaSysDatabaseDataSet1.xss">
       <DependentUpon>PublicaSysDatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PublicaSysDatabaseDataSet2.xsc">
+      <DependentUpon>PublicaSysDatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PublicaSysDatabaseDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PublicaSysDatabaseDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PublicaSysDatabaseDataSet2.xss">
+      <DependentUpon>PublicaSysDatabaseDataSet2.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

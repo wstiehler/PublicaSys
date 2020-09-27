@@ -15,14 +15,7 @@ namespace PublicaSys.Forms
         public FormInicio()
         {
             InitializeComponent();
-        }
-
-        private void consultarDadosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FormConsulta fc = new FormConsulta();
-            fc.MdiParent = this;
-            fc.Show();
-        }
+        }      
 
         private void inserirDadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -50,6 +43,18 @@ namespace PublicaSys.Forms
             FormCalculoMax fcmax = new FormCalculoMax();
             fcmax.MdiParent = this;
             fcmax.Show();
+        }
+
+        private void FormInicio_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void consultarJogosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormConsultaJogos fcj = new FormConsultaJogos();
+            fcj.MdiParent = this;
+            fcj.Show();
         }
     }
 }
