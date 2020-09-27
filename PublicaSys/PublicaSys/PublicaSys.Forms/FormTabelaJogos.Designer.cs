@@ -63,6 +63,8 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.HighlightText;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -76,6 +78,7 @@
             this.dataGridView1.DataSource = this.tableBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(64, 12);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(643, 266);
             this.dataGridView1.TabIndex = 1;
             // 
@@ -84,36 +87,42 @@
             this.jogoDataGridViewTextBoxColumn.DataPropertyName = "Jogo";
             this.jogoDataGridViewTextBoxColumn.HeaderText = "Jogo";
             this.jogoDataGridViewTextBoxColumn.Name = "jogoDataGridViewTextBoxColumn";
+            this.jogoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // placarDataGridViewTextBoxColumn
             // 
             this.placarDataGridViewTextBoxColumn.DataPropertyName = "Placar";
             this.placarDataGridViewTextBoxColumn.HeaderText = "Placar";
             this.placarDataGridViewTextBoxColumn.Name = "placarDataGridViewTextBoxColumn";
+            this.placarDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // mínimoDaTemporadaDataGridViewTextBoxColumn
             // 
             this.mínimoDaTemporadaDataGridViewTextBoxColumn.DataPropertyName = "Mínimo da temporada";
             this.mínimoDaTemporadaDataGridViewTextBoxColumn.HeaderText = "Mínimo da temporada";
             this.mínimoDaTemporadaDataGridViewTextBoxColumn.Name = "mínimoDaTemporadaDataGridViewTextBoxColumn";
+            this.mínimoDaTemporadaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // máximoDaTemporaDataGridViewTextBoxColumn
             // 
             this.máximoDaTemporaDataGridViewTextBoxColumn.DataPropertyName = "Máximo da tempora";
             this.máximoDaTemporaDataGridViewTextBoxColumn.HeaderText = "Máximo da tempora";
             this.máximoDaTemporaDataGridViewTextBoxColumn.Name = "máximoDaTemporaDataGridViewTextBoxColumn";
+            this.máximoDaTemporaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // quebraRecordeMinDataGridViewTextBoxColumn
             // 
             this.quebraRecordeMinDataGridViewTextBoxColumn.DataPropertyName = "Quebra recorde Min";
             this.quebraRecordeMinDataGridViewTextBoxColumn.HeaderText = "Quebra recorde Min";
             this.quebraRecordeMinDataGridViewTextBoxColumn.Name = "quebraRecordeMinDataGridViewTextBoxColumn";
+            this.quebraRecordeMinDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // quebraRecordeMáxDataGridViewTextBoxColumn
             // 
             this.quebraRecordeMáxDataGridViewTextBoxColumn.DataPropertyName = "Quebra recorde Máx";
             this.quebraRecordeMáxDataGridViewTextBoxColumn.HeaderText = "Quebra recorde Máx";
             this.quebraRecordeMáxDataGridViewTextBoxColumn.Name = "quebraRecordeMáxDataGridViewTextBoxColumn";
+            this.quebraRecordeMáxDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // tableBindingSource
             // 

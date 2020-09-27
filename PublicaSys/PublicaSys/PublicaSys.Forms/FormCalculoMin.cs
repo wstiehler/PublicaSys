@@ -17,6 +17,7 @@ namespace PublicaSys.Forms
             InitializeComponent();
         }
 
+            //Botão para voltar ao formulário inicial. 
         private void btnVoltarPagina_Click(object sender, EventArgs e)
         {
             this.Close();

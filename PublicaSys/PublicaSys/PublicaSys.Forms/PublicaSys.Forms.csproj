@@ -66,6 +66,12 @@
     <Compile Include="FormConsultaJogos.Designer.cs">
       <DependentUpon>FormConsultaJogos.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormConsultaPlacares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultaPlacares.Designer.cs">
+      <DependentUpon>FormConsultaPlacares.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormInicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PublicaSysDatabaseDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="PublicaSysDatabaseDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PublicaSysDatabaseDataSet3.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormCalculoMax.resx">
       <DependentUpon>FormCalculoMax.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormConsultaJogos.resx">
       <DependentUpon>FormConsultaJogos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultaPlacares.resx">
+      <DependentUpon>FormConsultaPlacares.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormInicio.resx">
       <DependentUpon>FormInicio.cs</DependentUpon>
@@ -128,6 +142,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Properties\DataSources\PublicaSys.Forms.PublicaSysDatabaseDataSet2TableAdapters.TableAdapterManager+UpdateOrderOption.datasource" />
+    <None Include="Properties\DataSources\PublicaSys.Forms.PublicaSysDatabaseDataSet2TableAdapters.TableAdapterManager.datasource" />
+    <None Include="Properties\DataSources\PublicaSys.Forms.PublicaSysDatabaseDataSet2TableAdapters.TableTableAdapter.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -169,6 +186,17 @@
     </None>
     <None Include="PublicaSysDatabaseDataSet2.xss">
       <DependentUpon>PublicaSysDatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PublicaSysDatabaseDataSet3.xsc">
+      <DependentUpon>PublicaSysDatabaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="PublicaSysDatabaseDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PublicaSysDatabaseDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PublicaSysDatabaseDataSet3.xss">
+      <DependentUpon>PublicaSysDatabaseDataSet3.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

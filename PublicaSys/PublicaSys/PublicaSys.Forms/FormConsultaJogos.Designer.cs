@@ -38,12 +38,12 @@
             this.tableBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.publicaSysDatabaseDataSet1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.jogoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tableBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.publicaSysDatabaseDataSet2 = new PublicaSys.Forms.PublicaSysDatabaseDataSet2();
             this.publicaSysDatabaseDataSet = new PublicaSys.Forms.PublicaSysDatabaseDataSet();
             this.publicaSysDatabaseDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.publicaSysDatabaseDataSet2 = new PublicaSys.Forms.PublicaSysDatabaseDataSet2();
-            this.tableBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.tableTableAdapter1 = new PublicaSys.Forms.PublicaSysDatabaseDataSet2TableAdapters.TableTableAdapter();
-            this.jogoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnVoltarPageConsulta = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.publicaSysDatabaseDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
@@ -51,10 +51,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.publicaSysDatabaseDataSet1BindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.publicaSysDatabaseDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.publicaSysDatabaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.publicaSysDatabaseDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.publicaSysDatabaseDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // publicaSysDatabaseDataSet1
@@ -97,7 +97,7 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.jogoDataGridViewTextBoxColumn});
@@ -107,6 +107,23 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(143, 400);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // jogoDataGridViewTextBoxColumn
+            // 
+            this.jogoDataGridViewTextBoxColumn.DataPropertyName = "Jogo";
+            this.jogoDataGridViewTextBoxColumn.HeaderText = "Jogo";
+            this.jogoDataGridViewTextBoxColumn.Name = "jogoDataGridViewTextBoxColumn";
+            this.jogoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tableBindingSource2
+            // 
+            this.tableBindingSource2.DataMember = "Table";
+            this.tableBindingSource2.DataSource = this.publicaSysDatabaseDataSet2;
+            // 
+            // publicaSysDatabaseDataSet2
+            // 
+            this.publicaSysDatabaseDataSet2.DataSetName = "PublicaSysDatabaseDataSet2";
+            this.publicaSysDatabaseDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // publicaSysDatabaseDataSet
             // 
@@ -118,29 +135,13 @@
             this.publicaSysDatabaseDataSetBindingSource.DataSource = this.publicaSysDatabaseDataSet;
             this.publicaSysDatabaseDataSetBindingSource.Position = 0;
             // 
-            // publicaSysDatabaseDataSet2
-            // 
-            this.publicaSysDatabaseDataSet2.DataSetName = "PublicaSysDatabaseDataSet2";
-            this.publicaSysDatabaseDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tableBindingSource2
-            // 
-            this.tableBindingSource2.DataMember = "Table";
-            this.tableBindingSource2.DataSource = this.publicaSysDatabaseDataSet2;
-            // 
             // tableTableAdapter1
             // 
             this.tableTableAdapter1.ClearBeforeFill = true;
             // 
-            // jogoDataGridViewTextBoxColumn
-            // 
-            this.jogoDataGridViewTextBoxColumn.DataPropertyName = "Jogo";
-            this.jogoDataGridViewTextBoxColumn.HeaderText = "Jogo";
-            this.jogoDataGridViewTextBoxColumn.Name = "jogoDataGridViewTextBoxColumn";
-            this.jogoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
             // btnVoltarPageConsulta
             // 
+            this.btnVoltarPageConsulta.CausesValidation = false;
             this.btnVoltarPageConsulta.Location = new System.Drawing.Point(388, 319);
             this.btnVoltarPageConsulta.Name = "btnVoltarPageConsulta";
             this.btnVoltarPageConsulta.Size = new System.Drawing.Size(178, 23);
@@ -171,10 +172,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.publicaSysDatabaseDataSet1BindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.publicaSysDatabaseDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.publicaSysDatabaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.publicaSysDatabaseDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.publicaSysDatabaseDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource2)).EndInit();
             this.ResumeLayout(false);
 
         }
