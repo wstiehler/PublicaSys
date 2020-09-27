@@ -24,6 +24,8 @@ namespace PublicaSys.Forms
 
         private void FormTabelaJogos_Load(object sender, EventArgs e)
         {
+            // TODO: esta linha de código carrega dados na tabela 'publicaSysDatabaseDataSet1.Table'. Você pode movê-la ou removê-la conforme necessário.
+            this.tableTableAdapter.Fill(this.publicaSysDatabaseDataSet1.Table);
 
         }
     }
