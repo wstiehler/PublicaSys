@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
+using System.Configuration;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -25,9 +27,10 @@ namespace PublicaSys.Forms
 
         }
 
+            //Linha de código carrega dados na tabela 'publicaSysDatabaseDataSet2.Table'.
         private void FormConsultaJogos_Load(object sender, EventArgs e)
         {
-            // TODO: esta linha de código carrega dados na tabela 'publicaSysDatabaseDataSet2.Table'. Você pode movê-la ou removê-la conforme necessário.
+            
             this.tableTableAdapter1.Fill(this.publicaSysDatabaseDataSet2.Table);
 
         }

@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCalculoMax));
             this.btnVoltarPagina = new System.Windows.Forms.Button();
+            this.btnCalcularMaximo = new System.Windows.Forms.Button();
+            this.txtCalcularMaximo = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnVoltarPagina
@@ -43,6 +45,22 @@
             this.btnVoltarPagina.UseVisualStyleBackColor = true;
             this.btnVoltarPagina.Click += new System.EventHandler(this.btnVoltarPagina_Click);
             // 
+            // btnCalcularMaximo
+            // 
+            this.btnCalcularMaximo.Location = new System.Drawing.Point(12, 70);
+            this.btnCalcularMaximo.Name = "btnCalcularMaximo";
+            this.btnCalcularMaximo.Size = new System.Drawing.Size(75, 23);
+            this.btnCalcularMaximo.TabIndex = 1;
+            this.btnCalcularMaximo.Text = "Calcular";
+            this.btnCalcularMaximo.UseVisualStyleBackColor = true;
+            // 
+            // txtCalcularMaximo
+            // 
+            this.txtCalcularMaximo.Location = new System.Drawing.Point(115, 73);
+            this.txtCalcularMaximo.Name = "txtCalcularMaximo";
+            this.txtCalcularMaximo.Size = new System.Drawing.Size(100, 20);
+            this.txtCalcularMaximo.TabIndex = 2;
+            // 
             // FormCalculoMax
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -50,6 +68,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(719, 354);
+            this.Controls.Add(this.txtCalcularMaximo);
+            this.Controls.Add(this.btnCalcularMaximo);
             this.Controls.Add(this.btnVoltarPagina);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -57,12 +77,16 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Calcular Máximo";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FormCalculoMax_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button btnVoltarPagina;
+        private System.Windows.Forms.Button btnCalcularMaximo;
+        private System.Windows.Forms.TextBox txtCalcularMaximo;
     }
 }

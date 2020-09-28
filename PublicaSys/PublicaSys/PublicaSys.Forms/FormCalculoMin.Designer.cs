@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCalculoMin));
             this.btnVoltarPagina = new System.Windows.Forms.Button();
+            this.txtCalcularMinimo = new System.Windows.Forms.TextBox();
+            this.btnCalcularMinimo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnVoltarPagina
@@ -43,6 +45,22 @@
             this.btnVoltarPagina.UseVisualStyleBackColor = true;
             this.btnVoltarPagina.Click += new System.EventHandler(this.btnVoltarPagina_Click);
             // 
+            // txtCalcularMinimo
+            // 
+            this.txtCalcularMinimo.Location = new System.Drawing.Point(114, 81);
+            this.txtCalcularMinimo.Name = "txtCalcularMinimo";
+            this.txtCalcularMinimo.Size = new System.Drawing.Size(100, 20);
+            this.txtCalcularMinimo.TabIndex = 1;
+            // 
+            // btnCalcularMinimo
+            // 
+            this.btnCalcularMinimo.Location = new System.Drawing.Point(13, 78);
+            this.btnCalcularMinimo.Name = "btnCalcularMinimo";
+            this.btnCalcularMinimo.Size = new System.Drawing.Size(75, 23);
+            this.btnCalcularMinimo.TabIndex = 2;
+            this.btnCalcularMinimo.Text = "button1";
+            this.btnCalcularMinimo.UseVisualStyleBackColor = true;
+            // 
             // FormCalculoMin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -50,6 +68,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(719, 354);
+            this.Controls.Add(this.btnCalcularMinimo);
+            this.Controls.Add(this.txtCalcularMinimo);
             this.Controls.Add(this.btnVoltarPagina);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -59,11 +79,14 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormCalculoMin_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button btnVoltarPagina;
+        private System.Windows.Forms.TextBox txtCalcularMinimo;
+        private System.Windows.Forms.Button btnCalcularMinimo;
     }
 }
