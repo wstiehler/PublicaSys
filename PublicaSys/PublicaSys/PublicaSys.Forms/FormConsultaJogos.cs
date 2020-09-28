@@ -30,8 +30,15 @@ namespace PublicaSys.Forms
             //Linha de código carrega dados na tabela 'publicaSysDatabaseDataSet2.Table'.
         private void FormConsultaJogos_Load(object sender, EventArgs e)
         {
+            try
+            {
+                this.tableTableAdapter1.Fill(this.publicaSysDatabaseDataSet2.Table);
+            }
             
-            this.tableTableAdapter1.Fill(this.publicaSysDatabaseDataSet2.Table);
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro genérico de aplicação DataBase! " + ex.Message);
+            }
 
         }
 

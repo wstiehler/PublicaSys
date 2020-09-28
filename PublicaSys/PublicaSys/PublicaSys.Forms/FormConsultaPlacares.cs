@@ -22,9 +22,15 @@ namespace PublicaSys.Forms
             //Linha de código carrega dados na tabela 'publicaSysDatabaseDataSet3.Table'.
         private void FormConsultaPlacares_Load(object sender, EventArgs e)
         {
-            
-            this.tableTableAdapter.Fill(this.publicaSysDatabaseDataSet3.Table);
+            try
+            {
+                this.tableTableAdapter.Fill(this.publicaSysDatabaseDataSet3.Table);
+            }
 
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro genérico de aplicação DataBase! " + ex.Message);
+            }
         }
             
             //Botão para voltar ao formulário inicial. 

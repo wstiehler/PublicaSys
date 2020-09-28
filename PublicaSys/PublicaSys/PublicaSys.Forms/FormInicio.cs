@@ -22,33 +22,65 @@ namespace PublicaSys.Forms
              //Botão para acessar o formulário de inserção de dados
         private void inserirDadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormInsercao fi = new FormInsercao();
-            fi.MdiParent = this;
-            fi.Show();
+            try
+            {
+                FormInsercao fi = new FormInsercao();
+                fi.MdiParent = this;
+                fi.Show();
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Não foi possível abrir o formulário de inserção!  " + ex.Message);
+            }
         }
 
             //Botão para acessar o formulário de Tabela de Jogos completa utilizando o DataSet1
         private void tabelaDeJogosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormTabelaJogos ft = new FormTabelaJogos();
-            ft.MdiParent = this;
-            ft.Show();
+            try
+            {
+                FormTabelaJogos ft = new FormTabelaJogos();
+                ft.MdiParent = this;
+                ft.Show();
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Não foi possível abrir o formulário de Tabela de Jogos!  " + ex.Message);
+            }
         }
 
             //Botão para acessar o formulário de consulta de Cálculo Mínimo
         private void calcularMinimoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormCalculoMin fcmin = new FormCalculoMin();
-            fcmin.MdiParent = this;
-            fcmin.Show();
+            try
+            {
+                FormCalculoMin fcmin = new FormCalculoMin();
+                fcmin.MdiParent = this;
+                fcmin.Show();
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Não foi possível abrir o formulário de Cálculo Mínimo!  " + ex.Message);
+            }
         }
 
             //Botão para acessar o formulário de consulta de Cálculo Máximo
         private void calcularMaximoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormCalculoMax fcmax = new FormCalculoMax();
-            fcmax.MdiParent = this;
-            fcmax.Show();
+            try
+            {
+                FormCalculoMax fcmax = new FormCalculoMax();
+                fcmax.MdiParent = this;
+                fcmax.Show();
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Não foi possível abrir o formulário de Cálculo Máximo!  " + ex.Message);
+            }
         }
 
         private void FormInicio_Load(object sender, EventArgs e)
@@ -59,17 +91,33 @@ namespace PublicaSys.Forms
             //Botão para acessar o formulário de consulta de Jogos utilizando o DataSet2.
         private void consultarJogosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormConsultaJogos fcj = new FormConsultaJogos();
-            fcj.MdiParent = this;
-            fcj.Show();
+            try
+            {
+                FormConsultaJogos fcj = new FormConsultaJogos();
+                fcj.MdiParent = this;
+                fcj.Show();
+            }
+            
+            catch (Exception ex)
+            {
+                MessageBox.Show("Não foi possível abrir o formulário de Consulta de Jogos!  " + ex.Message);
+            }
         }
 
             //Botão para acessar o formulário de consulta de Placares utilizando o DataSet3.
         private void consultarPlacaresToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormConsultaPlacares fcp = new FormConsultaPlacares();
-            fcp.MdiParent = this;
-            fcp.Show();
+            try
+            {
+                FormConsultaPlacares fcp = new FormConsultaPlacares();
+                fcp.MdiParent = this;
+                fcp.Show();
+            }
+            
+            catch (Exception ex)
+            {
+                MessageBox.Show("Não foi possível abir o formulário de Consulta de Placares! " + ex.Message);
+            }
         }
     }
 }
