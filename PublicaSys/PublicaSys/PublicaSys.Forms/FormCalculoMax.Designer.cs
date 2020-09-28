@@ -47,16 +47,16 @@
             // 
             // btnCalcularMaximo
             // 
-            this.btnCalcularMaximo.Location = new System.Drawing.Point(12, 70);
+            this.btnCalcularMaximo.Location = new System.Drawing.Point(13, 78);
             this.btnCalcularMaximo.Name = "btnCalcularMaximo";
-            this.btnCalcularMaximo.Size = new System.Drawing.Size(75, 23);
+            this.btnCalcularMaximo.Size = new System.Drawing.Size(95, 23);
             this.btnCalcularMaximo.TabIndex = 1;
-            this.btnCalcularMaximo.Text = "Calcular";
+            this.btnCalcularMaximo.Text = "Calcular Máximo";
             this.btnCalcularMaximo.UseVisualStyleBackColor = true;
             // 
             // txtCalcularMaximo
             // 
-            this.txtCalcularMaximo.Location = new System.Drawing.Point(115, 73);
+            this.txtCalcularMaximo.Location = new System.Drawing.Point(114, 81);
             this.txtCalcularMaximo.Name = "txtCalcularMaximo";
             this.txtCalcularMaximo.Size = new System.Drawing.Size(100, 20);
             this.txtCalcularMaximo.TabIndex = 2;

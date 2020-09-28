@@ -119,5 +119,34 @@ namespace PublicaSys.Forms
                 MessageBox.Show("Não foi possível abir o formulário de Consulta de Placares! " + ex.Message);
             }
         }
+
+            //Botão para acessar o formulário de consulta de Recordes utilizando DataSet4.
+        private void consultaRecordeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FormConsultaRecorde fcr = new FormConsultaRecorde();
+                fcr.MdiParent = this;
+                fcr.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Não foi possivel abrir o formulário de Consulta de Recordes! " + ex.Message);
+            }
+        }
+
+        private void calcularRecordeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FormCalculoRecorde fr = new FormCalculoRecorde();
+                fr.MdiParent = this;
+                fr.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Não foi possivel abrir o formulário de Calculo de Recorde! " + ex.Message);
+            }
+        }
     }
 }

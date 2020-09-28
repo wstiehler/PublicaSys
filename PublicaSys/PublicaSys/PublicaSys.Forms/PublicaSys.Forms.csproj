@@ -61,6 +61,12 @@
     <Compile Include="FormCalculoMin.Designer.cs">
       <DependentUpon>FormCalculoMin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCalculoRecorde.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCalculoRecorde.Designer.cs">
+      <DependentUpon>FormCalculoRecorde.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormConsultaJogos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,12 @@
     </Compile>
     <Compile Include="FormConsultaPlacares.Designer.cs">
       <DependentUpon>FormConsultaPlacares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultaRecorde.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultaRecorde.Designer.cs">
+      <DependentUpon>FormConsultaRecorde.cs</DependentUpon>
     </Compile>
     <Compile Include="FormInicio.cs">
       <SubType>Form</SubType>
@@ -113,17 +125,28 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PublicaSysDatabaseDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="PublicaSysDatabaseDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PublicaSysDatabaseDataSet4.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormCalculoMax.resx">
       <DependentUpon>FormCalculoMax.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCalculoMin.resx">
       <DependentUpon>FormCalculoMin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCalculoRecorde.resx">
+      <DependentUpon>FormCalculoRecorde.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormConsultaJogos.resx">
       <DependentUpon>FormConsultaJogos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormConsultaPlacares.resx">
       <DependentUpon>FormConsultaPlacares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultaRecorde.resx">
+      <DependentUpon>FormConsultaRecorde.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormInicio.resx">
       <DependentUpon>FormInicio.cs</DependentUpon>
@@ -198,6 +221,17 @@
     </None>
     <None Include="PublicaSysDatabaseDataSet3.xss">
       <DependentUpon>PublicaSysDatabaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="PublicaSysDatabaseDataSet4.xsc">
+      <DependentUpon>PublicaSysDatabaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="PublicaSysDatabaseDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PublicaSysDatabaseDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PublicaSysDatabaseDataSet4.xss">
+      <DependentUpon>PublicaSysDatabaseDataSet4.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

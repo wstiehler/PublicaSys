@@ -35,6 +35,7 @@
             this.consultarDadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarJogosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarPlacaresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultaRecordeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inserirDadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabelasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabelaDeJogosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,10 +43,9 @@
             this.calculosDaTemporadaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calcularMinimoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calcularMaximoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calcularRecordeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.informaçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buildToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.calcularRecordeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultaRecordeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -108,6 +108,13 @@
             this.consultarPlacaresToolStripMenuItem.Text = "Consultar Placares";
             this.consultarPlacaresToolStripMenuItem.Click += new System.EventHandler(this.consultarPlacaresToolStripMenuItem_Click);
             // 
+            // consultaRecordeToolStripMenuItem
+            // 
+            this.consultaRecordeToolStripMenuItem.Name = "consultaRecordeToolStripMenuItem";
+            this.consultaRecordeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.consultaRecordeToolStripMenuItem.Text = "Consulta Recorde";
+            this.consultaRecordeToolStripMenuItem.Click += new System.EventHandler(this.consultaRecordeToolStripMenuItem_Click);
+            // 
             // inserirDadosToolStripMenuItem
             // 
             this.inserirDadosToolStripMenuItem.Name = "inserirDadosToolStripMenuItem";
@@ -126,7 +133,7 @@
             // tabelaDeJogosToolStripMenuItem
             // 
             this.tabelaDeJogosToolStripMenuItem.Name = "tabelaDeJogosToolStripMenuItem";
-            this.tabelaDeJogosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tabelaDeJogosToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.tabelaDeJogosToolStripMenuItem.Text = "Tabela de Jogos";
             this.tabelaDeJogosToolStripMenuItem.Click += new System.EventHandler(this.tabelaDeJogosToolStripMenuItem_Click);
             // 
@@ -162,6 +169,13 @@
             this.calcularMaximoToolStripMenuItem.Text = "Calcular Maximo";
             this.calcularMaximoToolStripMenuItem.Click += new System.EventHandler(this.calcularMaximoToolStripMenuItem_Click);
             // 
+            // calcularRecordeToolStripMenuItem
+            // 
+            this.calcularRecordeToolStripMenuItem.Name = "calcularRecordeToolStripMenuItem";
+            this.calcularRecordeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.calcularRecordeToolStripMenuItem.Text = "Calcular Recorde";
+            this.calcularRecordeToolStripMenuItem.Click += new System.EventHandler(this.calcularRecordeToolStripMenuItem_Click);
+            // 
             // informaçõesToolStripMenuItem
             // 
             this.informaçõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -173,20 +187,8 @@
             // buildToolStripMenuItem
             // 
             this.buildToolStripMenuItem.Name = "buildToolStripMenuItem";
-            this.buildToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.buildToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
             this.buildToolStripMenuItem.Text = "Build";
-            // 
-            // calcularRecordeToolStripMenuItem
-            // 
-            this.calcularRecordeToolStripMenuItem.Name = "calcularRecordeToolStripMenuItem";
-            this.calcularRecordeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.calcularRecordeToolStripMenuItem.Text = "Calcular Recorde";
-            // 
-            // consultaRecordeToolStripMenuItem
-            // 
-            this.consultaRecordeToolStripMenuItem.Name = "consultaRecordeToolStripMenuItem";
-            this.consultaRecordeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.consultaRecordeToolStripMenuItem.Text = "Consulta Recorde";
             // 
             // FormInicio
             // 

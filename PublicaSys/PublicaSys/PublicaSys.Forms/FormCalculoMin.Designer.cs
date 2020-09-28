@@ -56,9 +56,9 @@
             // 
             this.btnCalcularMinimo.Location = new System.Drawing.Point(13, 78);
             this.btnCalcularMinimo.Name = "btnCalcularMinimo";
-            this.btnCalcularMinimo.Size = new System.Drawing.Size(75, 23);
+            this.btnCalcularMinimo.Size = new System.Drawing.Size(95, 23);
             this.btnCalcularMinimo.TabIndex = 2;
-            this.btnCalcularMinimo.Text = "button1";
+            this.btnCalcularMinimo.Text = "Calcular Mínimo";
             this.btnCalcularMinimo.UseVisualStyleBackColor = true;
             // 
             // FormCalculoMin

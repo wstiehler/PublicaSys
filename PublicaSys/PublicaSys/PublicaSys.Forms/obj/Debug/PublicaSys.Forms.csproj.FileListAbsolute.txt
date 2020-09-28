@@ -13,3 +13,5 @@ C:\Users\William\Desktop\PublicaSys\PublicaSys\PublicaSys\PublicaSys.Forms\obj\D
 C:\Users\William\Desktop\PublicaSys\PublicaSys\PublicaSys\PublicaSys.Forms\obj\Debug\PublicaSys.Forms.FormCalculoMax.resources
 C:\Users\William\Desktop\PublicaSys\PublicaSys\PublicaSys\PublicaSys.Forms\obj\Debug\PublicaSys.Forms.FormConsultaJogos.resources
 C:\Users\William\Desktop\PublicaSys\PublicaSys\PublicaSys\PublicaSys.Forms\obj\Debug\PublicaSys.Forms.FormConsultaPlacares.resources
+C:\Users\William\Desktop\PublicaSys\PublicaSys\PublicaSys\PublicaSys.Forms\obj\Debug\PublicaSys.Forms.FormConsultaRecorde.resources
+C:\Users\William\Desktop\PublicaSys\PublicaSys\PublicaSys\PublicaSys.Forms\obj\Debug\PublicaSys.Forms.FormCalculoRecorde.resources
