@@ -46,6 +46,9 @@
             this.calcularRecordeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.informaçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buildToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.públicaTécnologiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.prowayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.devWilliamVillaniStiehlerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,34 +94,34 @@
             this.consultarPlacaresToolStripMenuItem,
             this.consultaRecordeToolStripMenuItem});
             this.consultarDadosToolStripMenuItem.Name = "consultarDadosToolStripMenuItem";
-            this.consultarDadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.consultarDadosToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.consultarDadosToolStripMenuItem.Text = "Consultas";
             // 
             // consultarJogosToolStripMenuItem
             // 
             this.consultarJogosToolStripMenuItem.Name = "consultarJogosToolStripMenuItem";
-            this.consultarJogosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.consultarJogosToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.consultarJogosToolStripMenuItem.Text = "Consultar Jogos";
             this.consultarJogosToolStripMenuItem.Click += new System.EventHandler(this.consultarJogosToolStripMenuItem_Click);
             // 
             // consultarPlacaresToolStripMenuItem
             // 
             this.consultarPlacaresToolStripMenuItem.Name = "consultarPlacaresToolStripMenuItem";
-            this.consultarPlacaresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.consultarPlacaresToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.consultarPlacaresToolStripMenuItem.Text = "Consultar Placares";
             this.consultarPlacaresToolStripMenuItem.Click += new System.EventHandler(this.consultarPlacaresToolStripMenuItem_Click);
             // 
             // consultaRecordeToolStripMenuItem
             // 
             this.consultaRecordeToolStripMenuItem.Name = "consultaRecordeToolStripMenuItem";
-            this.consultaRecordeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.consultaRecordeToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.consultaRecordeToolStripMenuItem.Text = "Consulta Recorde";
             this.consultaRecordeToolStripMenuItem.Click += new System.EventHandler(this.consultaRecordeToolStripMenuItem_Click);
             // 
             // inserirDadosToolStripMenuItem
             // 
             this.inserirDadosToolStripMenuItem.Name = "inserirDadosToolStripMenuItem";
-            this.inserirDadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.inserirDadosToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.inserirDadosToolStripMenuItem.Text = "Inserir Jogos";
             this.inserirDadosToolStripMenuItem.Click += new System.EventHandler(this.inserirDadosToolStripMenuItem_Click);
             // 
@@ -158,28 +161,31 @@
             // calcularMinimoToolStripMenuItem
             // 
             this.calcularMinimoToolStripMenuItem.Name = "calcularMinimoToolStripMenuItem";
-            this.calcularMinimoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.calcularMinimoToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.calcularMinimoToolStripMenuItem.Text = "Calcular Minimo";
             this.calcularMinimoToolStripMenuItem.Click += new System.EventHandler(this.calcularMinimoToolStripMenuItem_Click);
             // 
             // calcularMaximoToolStripMenuItem
             // 
             this.calcularMaximoToolStripMenuItem.Name = "calcularMaximoToolStripMenuItem";
-            this.calcularMaximoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.calcularMaximoToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.calcularMaximoToolStripMenuItem.Text = "Calcular Maximo";
             this.calcularMaximoToolStripMenuItem.Click += new System.EventHandler(this.calcularMaximoToolStripMenuItem_Click);
             // 
             // calcularRecordeToolStripMenuItem
             // 
             this.calcularRecordeToolStripMenuItem.Name = "calcularRecordeToolStripMenuItem";
-            this.calcularRecordeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.calcularRecordeToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.calcularRecordeToolStripMenuItem.Text = "Calcular Recorde";
             this.calcularRecordeToolStripMenuItem.Click += new System.EventHandler(this.calcularRecordeToolStripMenuItem_Click);
             // 
             // informaçõesToolStripMenuItem
             // 
             this.informaçõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.buildToolStripMenuItem});
+            this.buildToolStripMenuItem,
+            this.públicaTécnologiaToolStripMenuItem,
+            this.prowayToolStripMenuItem,
+            this.devWilliamVillaniStiehlerToolStripMenuItem});
             this.informaçõesToolStripMenuItem.Name = "informaçõesToolStripMenuItem";
             this.informaçõesToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
             this.informaçõesToolStripMenuItem.Text = "Informações";
@@ -187,8 +193,26 @@
             // buildToolStripMenuItem
             // 
             this.buildToolStripMenuItem.Name = "buildToolStripMenuItem";
-            this.buildToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
-            this.buildToolStripMenuItem.Text = "Build";
+            this.buildToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.buildToolStripMenuItem.Text = "Build 2.0";
+            // 
+            // públicaTécnologiaToolStripMenuItem
+            // 
+            this.públicaTécnologiaToolStripMenuItem.Name = "públicaTécnologiaToolStripMenuItem";
+            this.públicaTécnologiaToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.públicaTécnologiaToolStripMenuItem.Text = "Pública Técnologia";
+            // 
+            // prowayToolStripMenuItem
+            // 
+            this.prowayToolStripMenuItem.Name = "prowayToolStripMenuItem";
+            this.prowayToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.prowayToolStripMenuItem.Text = "ProWay Treinamentos";
+            // 
+            // devWilliamVillaniStiehlerToolStripMenuItem
+            // 
+            this.devWilliamVillaniStiehlerToolStripMenuItem.Name = "devWilliamVillaniStiehlerToolStripMenuItem";
+            this.devWilliamVillaniStiehlerToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.devWilliamVillaniStiehlerToolStripMenuItem.Text = "Dev: William Villani Stiehler";
             // 
             // FormInicio
             // 
@@ -234,6 +258,9 @@
         private System.Windows.Forms.ToolStripMenuItem consultarPlacaresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem calcularRecordeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultaRecordeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem públicaTécnologiaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem prowayToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem devWilliamVillaniStiehlerToolStripMenuItem;
     }
 }
 
