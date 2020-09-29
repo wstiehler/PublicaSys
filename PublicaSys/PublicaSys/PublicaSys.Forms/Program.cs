@@ -14,9 +14,16 @@ namespace PublicaSys.Forms
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormInicio());
+            try
+            {
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new FormInicio());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Não é possivel saltar a lista com valor nulo. Favor Preencher ! Error Log:" + ex.Message);
+            }
         }
     }
 }
