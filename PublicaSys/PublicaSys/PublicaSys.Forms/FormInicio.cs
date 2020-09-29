@@ -148,5 +148,15 @@ namespace PublicaSys.Forms
                 MessageBox.Show("Não foi possivel abrir o formulário de Calculo de Recorde! " + ex.Message);
             }
         }
+
+        private void buildToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void públicaTécnologiaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -195,12 +195,14 @@
             this.buildToolStripMenuItem.Name = "buildToolStripMenuItem";
             this.buildToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.buildToolStripMenuItem.Text = "Build 2.0";
+            this.buildToolStripMenuItem.Click += new System.EventHandler(this.buildToolStripMenuItem_Click);
             // 
             // públicaTécnologiaToolStripMenuItem
             // 
             this.públicaTécnologiaToolStripMenuItem.Name = "públicaTécnologiaToolStripMenuItem";
             this.públicaTécnologiaToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
-            this.públicaTécnologiaToolStripMenuItem.Text = "Pública Técnologia";
+            this.públicaTécnologiaToolStripMenuItem.Text = "Pública Tecnologia";
+            this.públicaTécnologiaToolStripMenuItem.Click += new System.EventHandler(this.públicaTécnologiaToolStripMenuItem_Click);
             // 
             // prowayToolStripMenuItem
             // 

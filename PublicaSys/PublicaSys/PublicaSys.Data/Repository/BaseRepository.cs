@@ -28,8 +28,7 @@ namespace PublicaSys.Data.Repository
             using (PublicaSysContext context = new PublicaSysContext())
             {
                 model = context.Set<T>().Find(id);
-                // --- Filtro por id usando 
-                //model = context.Produto.Where(p=>p.Id==id).FirstOrDefault();
+                
             }
             return model;
 
