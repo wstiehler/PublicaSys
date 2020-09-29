@@ -49,14 +49,15 @@
             // 
             this.btnCalcularMaximo.Location = new System.Drawing.Point(13, 78);
             this.btnCalcularMaximo.Name = "btnCalcularMaximo";
-            this.btnCalcularMaximo.Size = new System.Drawing.Size(95, 23);
+            this.btnCalcularMaximo.Size = new System.Drawing.Size(167, 23);
             this.btnCalcularMaximo.TabIndex = 1;
-            this.btnCalcularMaximo.Text = "Calcular Máximo";
+            this.btnCalcularMaximo.Text = "Calcular máximo da temporada";
             this.btnCalcularMaximo.UseVisualStyleBackColor = true;
+            this.btnCalcularMaximo.Click += new System.EventHandler(this.btnCalcularMaximo_Click);
             // 
             // txtCalcularMaximo
             // 
-            this.txtCalcularMaximo.Location = new System.Drawing.Point(114, 81);
+            this.txtCalcularMaximo.Location = new System.Drawing.Point(186, 80);
             this.txtCalcularMaximo.Name = "txtCalcularMaximo";
             this.txtCalcularMaximo.Size = new System.Drawing.Size(100, 20);
             this.txtCalcularMaximo.TabIndex = 2;

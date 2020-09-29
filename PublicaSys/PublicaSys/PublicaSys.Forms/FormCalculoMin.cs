@@ -29,5 +29,25 @@ namespace PublicaSys.Forms
         {
 
         }
+
+            //Botão para calcular minimo da temporada. 
+        private void btnCalcularMinimo_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int numerominimo1 = 12;
+                int numerominimo2 = 24;
+                int numerominimo3 = 10;
+                int numerominimo4 = 24;
+
+                double totalminimo = numerominimo1 + numerominimo2 + numerominimo3 + numerominimo4;
+
+                txtCalcularMinimo.Text = totalminimo.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro genérico ao calcular mínimo da temporada ! " + ex.Message);
+            }
+        }
     }
 }

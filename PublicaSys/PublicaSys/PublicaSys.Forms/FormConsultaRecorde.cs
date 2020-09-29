@@ -20,8 +20,14 @@ namespace PublicaSys.Forms
         // Linha de código carrega dados na tabela 'publicaSysDatabaseDataSet4.Table'. 
         private void FormConsultaRecorde_Load(object sender, EventArgs e)
         {
-           
-            this.tableTableAdapter.Fill(this.publicaSysDatabaseDataSet4.Table);
+           try
+            {
+                this.tableTableAdapter.Fill(this.publicaSysDatabaseDataSet4.Table);
+            }
+           catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao conectar-se no DataSet4 !" + ex.Message);
+            }
 
         }
 

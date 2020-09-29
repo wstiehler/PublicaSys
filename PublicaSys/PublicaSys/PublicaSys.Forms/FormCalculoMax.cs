@@ -21,6 +21,7 @@ namespace PublicaSys.Forms
     
         }
 
+              //Botão para voltar ao formulário inicial. 
         private void btnVoltarPagina_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -31,6 +32,25 @@ namespace PublicaSys.Forms
 
            
         }
-    
+
+            //Botão para calcular o máximo da temporada. 
+        private void btnCalcularMaximo_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int numeromaximo1 = 12;
+                int numeromaximo2 = 24;
+                int numeromaximo3 = 24;
+                int numeromaximo4 = 24;
+
+                double totalmaximo = numeromaximo1 + numeromaximo2 + numeromaximo3 + numeromaximo4;
+
+                txtCalcularMaximo.Text = totalmaximo.ToString();
+            }
+             catch (Exception ex)
+            {
+                MessageBox.Show("Erro genérico ao calcular máximo da temporada ! " + ex.Message);
+            }
+        }
     }
 }

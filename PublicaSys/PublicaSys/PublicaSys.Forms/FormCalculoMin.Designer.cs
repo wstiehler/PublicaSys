@@ -47,7 +47,7 @@
             // 
             // txtCalcularMinimo
             // 
-            this.txtCalcularMinimo.Location = new System.Drawing.Point(114, 81);
+            this.txtCalcularMinimo.Location = new System.Drawing.Point(179, 80);
             this.txtCalcularMinimo.Name = "txtCalcularMinimo";
             this.txtCalcularMinimo.Size = new System.Drawing.Size(100, 20);
             this.txtCalcularMinimo.TabIndex = 1;
@@ -56,10 +56,11 @@
             // 
             this.btnCalcularMinimo.Location = new System.Drawing.Point(13, 78);
             this.btnCalcularMinimo.Name = "btnCalcularMinimo";
-            this.btnCalcularMinimo.Size = new System.Drawing.Size(95, 23);
+            this.btnCalcularMinimo.Size = new System.Drawing.Size(160, 23);
             this.btnCalcularMinimo.TabIndex = 2;
-            this.btnCalcularMinimo.Text = "Calcular Mínimo";
+            this.btnCalcularMinimo.Text = "Calcular mínimo da temporada";
             this.btnCalcularMinimo.UseVisualStyleBackColor = true;
+            this.btnCalcularMinimo.Click += new System.EventHandler(this.btnCalcularMinimo_Click);
             // 
             // FormCalculoMin
             // 

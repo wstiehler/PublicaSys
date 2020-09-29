@@ -38,10 +38,11 @@
             // 
             this.btnCalculaRecorde.Location = new System.Drawing.Point(13, 78);
             this.btnCalculaRecorde.Name = "btnCalculaRecorde";
-            this.btnCalculaRecorde.Size = new System.Drawing.Size(105, 23);
+            this.btnCalculaRecorde.Size = new System.Drawing.Size(171, 23);
             this.btnCalculaRecorde.TabIndex = 0;
-            this.btnCalculaRecorde.Text = "Calcular Recorde";
+            this.btnCalculaRecorde.Text = "Calcular Recordes Quebrados";
             this.btnCalculaRecorde.UseVisualStyleBackColor = true;
+            this.btnCalculaRecorde.Click += new System.EventHandler(this.btnCalculaRecorde_Click);
             // 
             // btnVoltarPagina
             // 
@@ -55,7 +56,7 @@
             // 
             // txtCalculaRecorde
             // 
-            this.txtCalculaRecorde.Location = new System.Drawing.Point(125, 80);
+            this.txtCalculaRecorde.Location = new System.Drawing.Point(190, 80);
             this.txtCalculaRecorde.Name = "txtCalculaRecorde";
             this.txtCalculaRecorde.Size = new System.Drawing.Size(100, 20);
             this.txtCalculaRecorde.TabIndex = 2;
@@ -76,6 +77,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Calculo Recorde";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FormCalculoRecorde_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
