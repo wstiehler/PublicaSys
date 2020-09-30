@@ -22,7 +22,7 @@ namespace PublicaSys.Forms
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Não é possivel saltar a lista com valor nulo. Favor Preencher ! Error Log:" + ex.Message);
+                MessageBox.Show("Não é possivel salvar a lista com valor nulo. Favor Preencher ! Error Log:" + ex.Message);
             }
         }
     }
