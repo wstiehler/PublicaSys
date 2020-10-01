@@ -52,6 +52,9 @@ Nesta Build contém:
 		Forms Finalizado
 
 		Codigo Finalizado 
-		
 
-Adicionado indentação 
+		Testes de Software Finalizado. 
+
+		Bugs corrigidos. 
+				
+
