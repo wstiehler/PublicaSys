@@ -34,14 +34,14 @@
             this.btnCalcularMaximo = new System.Windows.Forms.Button();
             this.txtCalcularMaximo = new System.Windows.Forms.TextBox();
             this.dgvMaxTemporada = new System.Windows.Forms.DataGridView();
-            this.publicaSysDatabaseDataSet5 = new PublicaSys.Forms.PublicaSysDatabaseDataSet5();
-            this.tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tableTableAdapter = new PublicaSys.Forms.PublicaSysDatabaseDataSet5TableAdapters.TableTableAdapter();
             this.máximoDaTemporaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.publicaSysDatabaseDataSet5 = new PublicaSys.Forms.PublicaSysDatabaseDataSet5();
+            this.tableTableAdapter = new PublicaSys.Forms.PublicaSysDatabaseDataSet5TableAdapters.TableTableAdapter();
             this.lblAviso = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMaxTemporada)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.publicaSysDatabaseDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.publicaSysDatabaseDataSet5)).BeginInit();
             this.SuspendLayout();
             // 
             // btnVoltarPagina
@@ -89,20 +89,6 @@
             this.dgvMaxTemporada.TabIndex = 3;
             this.dgvMaxTemporada.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMaxTemporada_CellContentClick);
             // 
-            // publicaSysDatabaseDataSet5
-            // 
-            this.publicaSysDatabaseDataSet5.DataSetName = "PublicaSysDatabaseDataSet5";
-            this.publicaSysDatabaseDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tableBindingSource
-            // 
-            this.tableBindingSource.DataMember = "Table";
-            this.tableBindingSource.DataSource = this.publicaSysDatabaseDataSet5;
-            // 
-            // tableTableAdapter
-            // 
-            this.tableTableAdapter.ClearBeforeFill = true;
-            // 
             // máximoDaTemporaDataGridViewTextBoxColumn
             // 
             this.máximoDaTemporaDataGridViewTextBoxColumn.DataPropertyName = "Máximo da tempora";
@@ -110,12 +96,28 @@
             this.máximoDaTemporaDataGridViewTextBoxColumn.Name = "máximoDaTemporaDataGridViewTextBoxColumn";
             this.máximoDaTemporaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // tableBindingSource
+            // 
+            this.tableBindingSource.DataMember = "Table";
+            this.tableBindingSource.DataSource = this.publicaSysDatabaseDataSet5;
+            // 
+            // publicaSysDatabaseDataSet5
+            // 
+            this.publicaSysDatabaseDataSet5.DataSetName = "PublicaSysDatabaseDataSet5";
+            this.publicaSysDatabaseDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tableTableAdapter
+            // 
+            this.tableTableAdapter.ClearBeforeFill = true;
+            // 
             // lblAviso
             // 
             this.lblAviso.AutoSize = true;
+            this.lblAviso.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblAviso.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblAviso.Location = new System.Drawing.Point(523, 24);
             this.lblAviso.Name = "lblAviso";
-            this.lblAviso.Size = new System.Drawing.Size(184, 13);
+            this.lblAviso.Size = new System.Drawing.Size(186, 15);
             this.lblAviso.TabIndex = 4;
             this.lblAviso.Text = "Não esqueça de selecionar as linhas!";
             // 
@@ -139,8 +141,8 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormCalculoMax_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMaxTemporada)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.publicaSysDatabaseDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.publicaSysDatabaseDataSet5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

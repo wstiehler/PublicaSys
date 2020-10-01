@@ -34,14 +34,14 @@
             this.txtCalcularMinimo = new System.Windows.Forms.TextBox();
             this.btnCalcularMinimo = new System.Windows.Forms.Button();
             this.dgvMinTemporada = new System.Windows.Forms.DataGridView();
-            this.publicaSysDatabaseDataSet6 = new PublicaSys.Forms.PublicaSysDatabaseDataSet6();
-            this.tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tableTableAdapter = new PublicaSys.Forms.PublicaSysDatabaseDataSet6TableAdapters.TableTableAdapter();
             this.mínimoDaTemporadaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.publicaSysDatabaseDataSet6 = new PublicaSys.Forms.PublicaSysDatabaseDataSet6();
+            this.tableTableAdapter = new PublicaSys.Forms.PublicaSysDatabaseDataSet6TableAdapters.TableTableAdapter();
             this.lblAviso = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMinTemporada)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.publicaSysDatabaseDataSet6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.publicaSysDatabaseDataSet6)).BeginInit();
             this.SuspendLayout();
             // 
             // btnVoltarPagina
@@ -89,20 +89,6 @@
             this.dgvMinTemporada.TabIndex = 3;
             this.dgvMinTemporada.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMinTemporada_CellContentClick);
             // 
-            // publicaSysDatabaseDataSet6
-            // 
-            this.publicaSysDatabaseDataSet6.DataSetName = "PublicaSysDatabaseDataSet6";
-            this.publicaSysDatabaseDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tableBindingSource
-            // 
-            this.tableBindingSource.DataMember = "Table";
-            this.tableBindingSource.DataSource = this.publicaSysDatabaseDataSet6;
-            // 
-            // tableTableAdapter
-            // 
-            this.tableTableAdapter.ClearBeforeFill = true;
-            // 
             // mínimoDaTemporadaDataGridViewTextBoxColumn
             // 
             this.mínimoDaTemporadaDataGridViewTextBoxColumn.DataPropertyName = "Mínimo da temporada";
@@ -110,12 +96,28 @@
             this.mínimoDaTemporadaDataGridViewTextBoxColumn.Name = "mínimoDaTemporadaDataGridViewTextBoxColumn";
             this.mínimoDaTemporadaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // tableBindingSource
+            // 
+            this.tableBindingSource.DataMember = "Table";
+            this.tableBindingSource.DataSource = this.publicaSysDatabaseDataSet6;
+            // 
+            // publicaSysDatabaseDataSet6
+            // 
+            this.publicaSysDatabaseDataSet6.DataSetName = "PublicaSysDatabaseDataSet6";
+            this.publicaSysDatabaseDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tableTableAdapter
+            // 
+            this.tableTableAdapter.ClearBeforeFill = true;
+            // 
             // lblAviso
             // 
             this.lblAviso.AutoSize = true;
+            this.lblAviso.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblAviso.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblAviso.Location = new System.Drawing.Point(523, 24);
             this.lblAviso.Name = "lblAviso";
-            this.lblAviso.Size = new System.Drawing.Size(184, 13);
+            this.lblAviso.Size = new System.Drawing.Size(186, 15);
             this.lblAviso.TabIndex = 4;
             this.lblAviso.Text = "Não esqueça de selecionar as linhas!";
             // 
@@ -139,8 +141,8 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormCalculoMin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMinTemporada)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.publicaSysDatabaseDataSet6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.publicaSysDatabaseDataSet6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
