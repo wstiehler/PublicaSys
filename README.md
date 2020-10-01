@@ -7,7 +7,7 @@ Requisitos para rodar a aplicação. 										    |
 * Visual Studio 2019 (Community/ Professional ou Enterpreise)							    |
 * .Net Framework 4.8												    |
 * Entity Framework 4.6.6											    |
-* Windows 10													    |
+* SQl 2017 ou 2019													    |
 														    |
 Caso seu computador não tenha os requisitos acima, na pasta PublicaSys\PublicaSys - Instalação Banco\Framework SQL  |
 tem os executaveis acima, com EXCEÇÃO do Visual Studio 2019. 							    |
