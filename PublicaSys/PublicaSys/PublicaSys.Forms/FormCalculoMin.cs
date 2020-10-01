@@ -25,9 +25,10 @@ namespace PublicaSys.Forms
             this.Close();
         }
 
+        //Linha de código carrega dados na tabela 'publicaSysDatabaseDataSet6.Table'. 
         private void FormCalculoMin_Load(object sender, EventArgs e)
         {
-            // TODO: esta linha de código carrega dados na tabela 'publicaSysDatabaseDataSet6.Table'. Você pode movê-la ou removê-la conforme necessário.
+            
             this.tableTableAdapter.Fill(this.publicaSysDatabaseDataSet6.Table);
 
         }
