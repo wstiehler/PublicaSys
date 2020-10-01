@@ -130,6 +130,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PublicaSysDatabaseDataSet4.xsd</DependentUpon>
     </Compile>
+    <Compile Include="PublicaSysDatabaseDataSet51.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PublicaSysDatabaseDataSet51.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PublicaSysDatabaseDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PublicaSysDatabaseDataSet6.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormCalculoMax.resx">
       <DependentUpon>FormCalculoMax.cs</DependentUpon>
     </EmbeddedResource>
@@ -232,6 +242,28 @@
     </None>
     <None Include="PublicaSysDatabaseDataSet4.xss">
       <DependentUpon>PublicaSysDatabaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="PublicaSysDatabaseDataSet51.xsc">
+      <DependentUpon>PublicaSysDatabaseDataSet51.xsd</DependentUpon>
+    </None>
+    <None Include="PublicaSysDatabaseDataSet51.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PublicaSysDatabaseDataSet51.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PublicaSysDatabaseDataSet51.xss">
+      <DependentUpon>PublicaSysDatabaseDataSet51.xsd</DependentUpon>
+    </None>
+    <None Include="PublicaSysDatabaseDataSet6.xsc">
+      <DependentUpon>PublicaSysDatabaseDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="PublicaSysDatabaseDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PublicaSysDatabaseDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PublicaSysDatabaseDataSet6.xss">
+      <DependentUpon>PublicaSysDatabaseDataSet6.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

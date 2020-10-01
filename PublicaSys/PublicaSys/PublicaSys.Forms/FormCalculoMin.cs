@@ -27,27 +27,42 @@ namespace PublicaSys.Forms
 
         private void FormCalculoMin_Load(object sender, EventArgs e)
         {
+            // TODO: esta linha de código carrega dados na tabela 'publicaSysDatabaseDataSet6.Table'. Você pode movê-la ou removê-la conforme necessário.
+            this.tableTableAdapter.Fill(this.publicaSysDatabaseDataSet6.Table);
 
         }
 
-            //Botão para calcular minimo da temporada. 
+        //Botão para calcular minimo da temporada. 
         private void btnCalcularMinimo_Click(object sender, EventArgs e)
         {
             try
             {
-                int numerominimo1 = 12;
-                int numerominimo2 = 24;
-                int numerominimo3 = 10;
-                int numerominimo4 = 24;
+                int N = 0;
+                int soma = 0;
+                foreach (DataGridViewCell dgv in dgvMinTemporada.SelectedCells)
+                {
+                    if (int.TryParse(dgv.Value.ToString(), out soma))
+                    {
+                        N = +N + soma;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Não foi possivel calcular, selecione mais valores!");
+                    }
+                }
 
-                double totalminimo = numerominimo1 + numerominimo2 + numerominimo3 + numerominimo4;
-
-                txtCalcularMinimo.Text = totalminimo.ToString();
+                txtCalcularMinimo.Text = N.ToString();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro genérico ao calcular mínimo da temporada ! " + ex.Message);
+                MessageBox.Show("Erro genérico de aplicação ! " + ex.Message);
             }
+
+        }
+
+        private void dgvMinTemporada_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

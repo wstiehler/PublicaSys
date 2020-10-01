@@ -9,6 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.DirectoryServices;
+using System.IO;
 
 namespace PublicaSys.Forms
 {
@@ -25,12 +27,15 @@ namespace PublicaSys.Forms
         private void btnVoltarPagina_Click(object sender, EventArgs e)
         {
             this.Close();
-        }      
+        }
 
+            //Linha de código carrega dados na tabela 'publicaSysDatabaseDataSet5.Table'. 
         private void FormCalculoMax_Load(object sender, EventArgs e)
         {
+            
+            this.tableTableAdapter.Fill(this.publicaSysDatabaseDataSet5.Table);
 
-           
+            
         }
 
             //Botão para calcular o máximo da temporada. 
@@ -38,19 +43,32 @@ namespace PublicaSys.Forms
         {
             try
             {
-                int numeromaximo1 = 12;
-                int numeromaximo2 = 24;
-                int numeromaximo3 = 24;
-                int numeromaximo4 = 24;
+                int N = 0;
+                int soma = 0;
+                foreach (DataGridViewCell dgv in dgvMaxTemporada.SelectedCells)
+                {
+                    if (int.TryParse(dgv.Value.ToString(), out soma))
+                    {
+                        N =+ N + soma;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Não foi possivel calcular, selecione mais valores!");
+                    }
+                }
 
-                double totalmaximo = numeromaximo1 + numeromaximo2 + numeromaximo3 + numeromaximo4;
-
-                txtCalcularMaximo.Text = totalmaximo.ToString();
+                txtCalcularMaximo.Text = N.ToString();
             }
              catch (Exception ex)
             {
-                MessageBox.Show("Erro genérico ao calcular máximo da temporada ! " + ex.Message);
+                MessageBox.Show("Erro genérico de aplicação ! " + ex.Message);
             }
+        }
+
+        internal void dgvMaxTemporada_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+            
         }
     }
 }
